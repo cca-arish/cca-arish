@@ -1,13 +1,17 @@
 👋 Hi, I’m @cca-arish
 I <3 Swift and Dogs
 
-extension world {
-  var common = "Fuck this world!"
+protocol WorldFucker {
+  func fuckThisWorld() -> String
 }
 
-protocol {
-  world.common = "Let's bring a paradigm shift"
+final class World: WorldFucker {
+  func fuckThisWorld() -> String {
+     return "Fuck this world!"
+  }
 }
+
+print(World().fuckThisWorld())
 
 <!---
 cca-arish/cca-arish is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
